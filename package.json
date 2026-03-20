@@ -1,0 +1,29 @@
+{
+  "name": "pdf-order-intelligence",
+  "version": "1.0.0",
+  "description": "Intelligent PDF sales order extraction pipeline for Business Central",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "keywords": ["pdf", "extraction", "business-central", "claude", "sales-order"],
+  "author": "Acorn Industrial Components",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^6.9.16",
+    "pdfjs-dist": "^4.9.155"
+  },
+  "optionalDependencies": {
+    "canvas": "^3.1.0"
+  }
+}
